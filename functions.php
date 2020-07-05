@@ -41,7 +41,7 @@ function understrap_add_site_info() {
     $the_theme = wp_get_theme();
 
     $site_info = sprintf(
-        '&copy; %1$s <a href="%2$s">%3$s</a><span class="sep"> | </span> %4$s',
+        '<div class="small">&copy; 2016-%1$s <a href="%2$s">%3$s</a>. All rights reserved.<span class="sep"> | </span> %4$s</div>',
         sprintf(
             date('Y')
         ),
@@ -49,7 +49,7 @@ function understrap_add_site_info() {
             home_url(),
         ),
         sprintf(
-            $the_theme->get( 'Name' ),
+            'Absolute Tree Company'
         ),
         sprintf( // WPCS: XSS ok.
             /* translators:*/

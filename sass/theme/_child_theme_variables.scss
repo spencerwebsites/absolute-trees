@@ -10,5 +10,14 @@
 // Color system
 //
 
-$primary: #7C008C;
+$primary: #537F59;
+$secondary: #F26730;
+$success: #3E5641;
+$darkorange: #ED4E0F;
+$light: #D3D0CB;
+$dark: #282B28;
+$gray-dark: $dark;
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap');
+
+$font-family-sans-serif: 'Work Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;

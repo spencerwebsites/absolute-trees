@@ -1,10 +1,29 @@
+body {
+    color: $dark;
+    font-size: 1.15rem;
+}
+
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .h3, .h4, .h5, .h6{
     font-weight: 600;
 }
 
+a {
+    color: $secondary;
+
+    &:hover,
+    &:focus {
+        color: $darkorange;
+    }
+}
+
+.display-1, .display-2, .display-3, .display-4 {
+    font-weight: normal;
+    line-height: 1;
+}
+
 .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .jumbotron {
@@ -13,15 +32,44 @@ h1, h2, h3, h4, h5, h6,
     background-position: center center;
 }
 
+.wpcf7 input[type=submit] {
+    background-color: $secondary;
+    border: none;
+    color: white;
+
+    &:hover,
+    &:active,
+    &:focus,
+    .wpcf7 input:not(:disabled):not(.disabled):active[type=submit] {
+        background-color: $darkorange !important;
+        border-color: $darkorange !important;
+        color: white;
+    }
+
+    &:active,
+    &:focus
+    &:active:focus {
+        box-shadow: 0 0 0 0.2rem rgba(244, 126, 79, 0.5) !important;
+    }
+}
+
 #main-menu {
 
     li {
-        flex: 1 0 auto;
         text-align: center;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            flex: 1 0 auto;
+            width: auto;
+        }
 
         a {
             color: white;
+            font-size: 1rem;
             font-weight: 600;
+            padding-bottom: .75rem;
+            padding-top: .75rem;
             text-transform: uppercase;
             transition: .15s ease background-color;
 
@@ -41,7 +89,8 @@ h1, h2, h3, h4, h5, h6,
         padding: 0;
 
         a {
-            padding: 0.5rem;
+            font-size: 1rem;
+            padding: .75rem 0.5rem;
 
             &:hover,
             &:focus {
@@ -72,4 +121,33 @@ h1, h2, h3, h4, h5, h6,
             box-shadow: 0 0 0 0.2rem rgba(244, 126, 79, 0.5);
         }
     }
+}
+
+#wrapper-static-hero {
+    background-color: $primary;
+    color: white !important;
+
+    .row > div {
+        text-align: center;
+    }
+}
+
+#wrapper-footer-full,
+#wrapper-footer {
+    background-color: $primary;
+    color: white !important;
+
+    a {
+        color: white !important;
+        text-decoration: underline;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+}
+
+#wrapper-footer {
+    background-color: $success;
 }
