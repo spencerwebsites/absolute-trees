@@ -1,0 +1,75 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.jumbotron {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#main-menu {
+
+    li {
+        flex: 1 0 auto;
+        text-align: center;
+
+        a {
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: .15s ease background-color;
+
+            &:hover,
+            &:focus {
+                background-color: $primary;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        background-color: $primary;
+        border: none;
+        border-radius: 0 0 4px 4px;
+        margin: 0;
+        min-width: 100%;
+        padding: 0;
+
+        a {
+            padding: 0.5rem;
+
+            &:hover,
+            &:focus {
+                background-color: $success;
+            }
+        }
+    }
+}
+
+#secondary-menu {
+
+    a {
+        background-color: $secondary;
+        border-radius: 4px;
+        color: white;
+        font-size: 1.15rem;
+        margin-left: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        transition: .15s ease background-color, .15s ease box-shadow;
+
+        &:hover,
+        &:focus {
+            background-color: $darkorange;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 0.2rem rgba(244, 126, 79, 0.5);
+        }
+    }
+}
