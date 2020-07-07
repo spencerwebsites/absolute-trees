@@ -12001,9 +12001,14 @@ blockquote p {
   min-width: 100%;
   padding: 0;
 }
+@media (min-width: 768px) {
+  #main-menu .dropdown-menu li {
+    text-align: left;
+  }
+}
 #main-menu .dropdown-menu a {
   font-size: 1rem;
-  padding: .75rem 0.5rem;
+  padding: .75rem;
 }
 #main-menu .dropdown-menu a:hover, #main-menu .dropdown-menu a:focus {
   background-color: #3E5641;
@@ -12027,6 +12032,12 @@ blockquote p {
 #secondary-menu a:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(244, 126, 79, 0.5);
           box-shadow: 0 0 0 0.2rem rgba(244, 126, 79, 0.5);
+}
+
+#main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #page-wrapper {
@@ -12082,6 +12093,6 @@ blockquote p {
 
 #wrapper-footer {
   background-color: #3E5641;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   padding-top: 1rem;
 }
