@@ -101,7 +101,7 @@ class understrap_cta_widget extends WP_Widget {
 		echo $args['before_widget'];
 		
 		if ( ! empty( $link ) )
-		echo __( '<a href="' . $link . '">', 'understrap' );
+		echo __( '<a href="' . $link . '" class="my-3 my-md-0 d-block">', 'understrap' );
 		
 		if ( ! empty( $fa ) )
 		echo __( '<div class="cta-icon"><i class="fa-fw ' . $fa . '"></i></div>', 'understrap' );
