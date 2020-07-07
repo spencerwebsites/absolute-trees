@@ -17,6 +17,25 @@ a {
     }
 }
 
+blockquote {
+    margin: 3rem 0 1rem;
+    padding-left: 1rem;
+    border-left: 5px solid $primary;
+
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+.btn-secondary {
+    color: white;
+
+    &:hover,
+    &:focus {
+        color: white;
+    }
+}
+
 .display-1, .display-2, .display-3, .display-4 {
     font-weight: normal;
     line-height: 1;
@@ -123,12 +142,42 @@ a {
     }
 }
 
+#page-wrapper {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
 #wrapper-static-hero {
     background-color: $primary;
     color: white !important;
 
     .row > div {
         text-align: center;
+    }
+
+    .cta-icon {
+        background-color: $secondary;
+        border-radius: 50px;
+        color: white;
+        display: inline-block;
+        font-size: 2rem;
+        padding: 1rem 1.25rem;
+        transition: .15s ease background-color;
+
+        &:hover,
+        &:focus {
+            background-color: $darkorange;
+        }
+    }
+
+    .cta-title {
+        color: white;
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1x;
+        margin-top: .5rem;
+        text-decoration: none;
     }
 }
 
@@ -150,4 +199,6 @@ a {
 
 #wrapper-footer {
     background-color: $success;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
 }
