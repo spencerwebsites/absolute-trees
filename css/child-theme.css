@@ -11921,7 +11921,7 @@ a:hover, a:focus {
 }
 
 blockquote {
-  margin: 3rem 0 1rem;
+  margin: 2rem 0;
   padding-left: 1rem;
   border-left: 5px solid #537F59;
 }
@@ -12014,6 +12014,7 @@ blockquote p {
   border-radius: 4px;
   color: white;
   font-size: 1.15rem;
+  font-weight: 600;
   margin-left: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -12058,7 +12059,7 @@ blockquote p {
   display: block;
   font-size: 1.5rem;
   font-weight: 600;
-  line-height: 1;
+  line-height: 1x;
   margin-top: .5rem;
   text-decoration: none;
 }
