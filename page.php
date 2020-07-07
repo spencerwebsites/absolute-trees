@@ -27,7 +27,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
+		<?php if ( is_front_page() || is_home() ) : ?>
 		<div class="row">
+		<?php endif; ?>
 
 			<?php if ( is_front_page() || is_home() ) : ?>
 				<!-- Do the left sidebar check -->
@@ -56,7 +58,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
 			<?php endif; ?>
 
-		</div><!-- .row -->
+			<?php if ( is_front_page() || is_home() ) : ?>
+			</div><!-- .row -->
+			<?php endif; ?>
 
 	</div><!-- #content -->
 
